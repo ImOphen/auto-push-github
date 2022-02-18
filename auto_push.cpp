@@ -20,9 +20,9 @@ int main(void)
     {
         while(std::cin.good())
         {
-            std::cout << "\033[1;33m $ ────Auto-push\033[0m";
+            std::cout << "\033[1;33m $ ────Auto-push\033[0m\n";
             std::system("git add *; git commit -m \" Automatic push \"; git push");
-            sleep(5);
+            sleep(60);
         }
     }
     else
