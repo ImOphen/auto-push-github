@@ -13,7 +13,7 @@ int main(void)
     {
         while(std::cin.good())
         {
-            std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
+            std::cout << "\n\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
              scanf("%s", input);
             std::system((str1 + input + str2).c_str());
         }
@@ -22,7 +22,7 @@ int main(void)
     {
         while(1)
         {
-            std::cout << "\033[1;33m $────Auto-push\033[0m\n";
+            std::cout << "\n\033[1;33m $────Auto-push\033[0m\n";
             std::system("git add *; git commit -m \" Automatic push \"; git push");
             sleep(60);
         }
