@@ -2,23 +2,19 @@
 
 ### How to install: 
 
-1. clone the ``` AutoPush ``` inside your project folder
-2. go to folder ``` AutoPush ```
+1. clone the ``` aut-push-github ``` inside your project folder
+2. go to folder and compile it ``` aut-push-github ```
 ```shell
-cd /AutoPush 
+ c++ auto_push.cpp
 ```
 3. start the program
 ```shell
-npm start
+./a.out
 ```
 
 ### How to use: 
-after the program runs every time you want to push just input your commit message and press enter.
-![img screen](https://raw.githubusercontent.com/Ra-Wo/AutoPush/main/imgs/Screen%20Shot%202022-02-18%20at%204.09.38%20PM.png)
-
-### Automatically push
-enter the command ```.auto``` for automatically push to github every 3s.
-![timg screen](https://raw.githubusercontent.com/Ra-Wo/AutoPush/main/imgs/Screen%20Shot%202022-02-18%20at%204.11.47%20PM.png)
+Run the program and chose the mode, if you chose to manually push, you will be able to enter the commit of your choice :D
+![img screen](https://cdn.discordapp.com/attachments/917755386323431445/944260733900824577/unknown.png)
 
 #### NOTE:
-add the name of AutoPush folder to your ```.gitignore``` file to avoid publish it with your project.
+add the name of AutoPush folder to your ```.gitignore``` file to avoid publishing it with your project.
