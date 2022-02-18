@@ -1,12 +1,30 @@
 #include <iostream>
+#include <unistd.h>
 
 int main(void)
 {
     std::string input;
-    while(std::cin.good())
+    int type;
+    std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0m [1] - Manual push, only enter commit\n     [2] - Automatic push every minute\n pick type of auto github push : ";
+    std::cin >> type;
+    if (type == 1)
     {
-        std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
-        std::cin >> input;
-        std::system(("git add *; git commit -m \"" + input + "\"; git push").c_str());
+        while(std::cin.good())
+        {
+            std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
+            std::cin >> input;
+            std::system(("git add *; git commit -m \"" + input + "\"; git push").c_str());
+        }
     }
+    else if (type == 2)
+    {
+        while(std::cin.good())
+        {
+            std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
+            std::system("git add *; git commit -m \" Automatic push \"; git push");
+            sleep(60);
+        }
+    }
+    else
+        std::cout << "Error";
 }
