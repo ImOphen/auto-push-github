@@ -21,7 +21,7 @@ int main(void)
         while(std::cin.good())
         {
             std::system("git add *; git commit -m \" Automatic push \"; git push");
-            std::cout << std::cout << "\033[1;33m╭────Auto-push" << std::endl << "╰─$ \033[0";
+            std::cout << std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0";
             sleep(60);
         }
     }
