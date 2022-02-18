@@ -8,9 +8,9 @@ int main(void)
     std::string str1= "git add *; git commit -m \"";
     std::string str2= "\"; git push";
     std::string cmd;
-    char type[1];
+    std::string type;
     std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0m [1] - Manual push, only enter commit\n     [2] - Automatic push every minute\n\n pick type of auto github push : ";
-    std::cin.get(type, 2);
+    std::getline (std::cin,type);
     if (type[0] == '1')
     {
         while(std::cin.good())
