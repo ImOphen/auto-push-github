@@ -22,7 +22,7 @@ int main(void)
         {
             std::cout << "\033[1;33m $ ────Auto-push\033[0m";
             std::system("git add *; git commit -m \" Automatic push \"; git push");
-            sleep(60);
+            sleep(5);
         }
     }
     else
