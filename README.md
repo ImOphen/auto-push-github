@@ -3,7 +3,7 @@
 ### How to install: 
 
 1. clone the ``` aut-push-github ``` inside your project folder
-2. go to folder and compile it ``` aut-push-github ```
+2. go to folder and compile it
 ```shell
  c++ auto_push.cpp
 ```
