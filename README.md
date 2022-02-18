@@ -22,6 +22,3 @@ enter the command ```.auto``` for automatically push to github every 3s.
 
 #### NOTE:
 add the name of AutoPush folder to your ```.gitignore``` file to avoid publish it with your project.
-
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/made-with-cpp.svg)
