@@ -1,6 +1,8 @@
 #include <iostream>
 #include <unistd.h>
 #include <string.h>
+#include <sstream>
+#include <string>
 
 int main(void)
 {
@@ -19,7 +21,7 @@ int main(void)
     }
     else if (type == "2")
     {
-        while(std::cin.good())
+        while(1)
         {
             std::cout << "\033[1;33m $────Auto-push\033[0m\n";
             std::system("git add *; git commit -m \" Automatic push \"; git push");
