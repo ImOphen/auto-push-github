@@ -1,16 +1,13 @@
 #include <iostream>
 #include <unistd.h>
-#include <string.h>
-#include <sstream>
-#include <string>
 
 int main(void)
 {
     std::string input;
-    std::string type;
+    char type[1];
     std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0m [1] - Manual push, only enter commit\n     [2] - Automatic push every minute\n\n pick type of auto github push : ";
-    std::cin >> type;
-    if (type == "1")
+    std::cin.get(type, 2);
+    if (type[0] == '1')
     {
         while(std::cin.good())
         {
@@ -19,7 +16,7 @@ int main(void)
             std::system(("git add *; git commit -m \"" + input + "\"; git push").c_str());
         }
     }
-    else if (type == "2")
+    else if (type[0] == '2')
     {
         while(1)
         {
