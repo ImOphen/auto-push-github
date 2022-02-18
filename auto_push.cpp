@@ -14,7 +14,7 @@ int main(void)
         while(std::cin.good())
         {
             std::cout << "\n\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
-            scanf("%s", input);
+            std::getline(input, 200, '\n');
             std::cout << input;
             std::system((str1 + input + str2).c_str());
         }
