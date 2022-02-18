@@ -5,7 +5,7 @@ int main(void)
 {
     std::string input;
     int type;
-    std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0m [1] - Manual push, only enter commit\n     [2] - Automatic push every minute\n pick type of auto github push : ";
+    std::cout << "\033[1;33m╭────Auto-push\n╰─$ \033[0m [1] - Manual push, only enter commit\n     [2] - Automatic push every minute\n\n pick type of auto github push : ";
     std::cin >> type;
     if (type == 1)
     {
