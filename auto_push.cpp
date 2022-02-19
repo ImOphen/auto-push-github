@@ -14,7 +14,7 @@ int main(void)
         {
             std::cout << "\n\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter commit message \033[1;33m: \033[0m";
             std::getline (std::cin,input);
-            std::system(("git add ../*; git commit -m \"" + input + "\"; git push").c_str());
+            std::system(("cd ..; git add *; git commit -m \"" + input + "\"; git push").c_str());
         }
     }
     else if (type[0] == '2')
@@ -22,7 +22,7 @@ int main(void)
         while(1)
         {
             std::cout << "\n\033[1;33m $────Auto-push\033[0m\n";
-            std::system("git add ../*; git commit -m \" Automatic push \"; git push");
+            std::system("cd ..; git add ../*; git commit -m \" Automatic push \"; git push");
             sleep(60);
         }
     }
