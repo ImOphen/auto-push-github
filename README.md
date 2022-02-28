@@ -14,7 +14,7 @@
 
 ### How to use: 
 Run the program and chose the mode, if you chose to manually push, you will be able to enter the commit of your choice :D
-![img screen](https://cdn.discordapp.com/attachments/917755386323431445/944260733900824577/unknown.png)
+![image](https://user-images.githubusercontent.com/43254081/156018790-73181012-43b0-4c43-b86e-b20f3e7548aa.png)
 
 #### NOTE:
 add the name of auto-push-github folder to your ```.gitignore``` file to avoid publishing it with your project.
