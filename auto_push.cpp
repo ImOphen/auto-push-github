@@ -82,7 +82,7 @@ int main(void)
 				std::cout << "\n\033[1;33m$───Auto-push" << std::endl << "\033[1;33mWaiting for file change\033[0m\n";
 			}
 			fileStream.close();
-			sleep(1);
+			sleep(2);
 		}
 	}
 	else
