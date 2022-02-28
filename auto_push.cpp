@@ -6,6 +6,8 @@
 void file_updated(void)
 {
 	std::string input;
+	std::string fileBase;
+	std::string fileCompare;
 	std::cout << "\n\033[1;33m╭────Auto-push\n╰─$ \033[0mEnter file to track and push \033[1;33m: \033[0m";
 	std::getline (std::cin,input);
 	if (!std::cin.good())
@@ -20,8 +22,6 @@ void file_updated(void)
 		std::cout << "Invalid file" << std::endl;
 		exit(1);
 	}
-	std::string fileBase;
-	std::string fileCompare;
 	std::getline(fileStream, fileBase, '\0');
 	fileStream.close();
 	std::cout << "\n\033[1;33m$───Auto-push" << std::endl << "\033[1;33mWaiting for file change\033[0m\n";
