@@ -5,11 +5,11 @@
 1. clone the ``` auto-push-github ``` inside your project folder
 2. go to folder and compile it
 ```shell
- c++ auto_push.cpp
+ c++ auto_push.cpp -o auto_push
 ```
 3. start the program
 ```shell
-./a.out
+./auto_push
 ```
 
 ### How to use: 
