@@ -7,7 +7,7 @@
 ```shell
  c++ auto_push.cpp -o auto_push
 ```
-3. start the program
+3. start the program (while you are inside auto-push-github/ folder)
 ```shell
 ./auto_push
 ```
